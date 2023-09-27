@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  ---light: #bee9e8;
+  ---medium: #62b6cb;
+  ---dark: #1b4965;
+}
+body {
+  background-color: var(---light);
+  font-family: sans-serif;
+}
+
+.pageHeader {
+  border-bottom: 0.5px solid var(---dark);
+  width: 40%;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: black;
+  padding: 0.5em 0;
+}
+
+.pokeList-container {
+  width: 70%;
+  margin: 0 auto 2rem;
+}
+
+.pokeList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pokeList-item {
+  border: 1px solid var(---dark);
+  box-shadow: 5px 5px 6px 0px var(---dark);
+  color: white;
+  font-size: 2rem;
+  width: 22%;
+  text-align: center;
+  vertical-align: center;
+  padding: 0.8em 0 4em;
+  background-color: var(---medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pokeList-item > img {
+  height: auto;
+  min-width: 60%;
+}
